@@ -4,10 +4,12 @@ import { Table } from './Contacts.styled';
 
 
 export const Contacts = ({contacts, fnDelete}) => {
+   
     if(contacts)
     return ( 
         <Table>
             <tbody>
+                
             {contacts.map(({name, number, id}, i) => {
                 return (
                     <ContactItem 
